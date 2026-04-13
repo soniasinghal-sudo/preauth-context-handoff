@@ -16,10 +16,7 @@ concurrency:
 
 jobs:
   validation:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Validation
-        run: echo "Validation passed"
+    uses: actions-intuit/ibp-wf/.github/workflows/validation.yml@v1
 
   build:
     runs-on: ubuntu-latest
